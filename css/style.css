@@ -40,7 +40,7 @@ nav{
 /** ************** GLOBAL STYLES ******************/
 
 .container{
-    width:90%;
+    width:95%;
     max-width:1375px;
     margin: 0 auto;
 }
@@ -59,6 +59,11 @@ nav.header .second-header ul li{
 }
 nav.header .second-header ul li a{
     color: var(--gray);
+    margin-top:0px
+}
+nav.header .second-header ul li a:hover{
+    color: black;
+    margin-top:0px;
 }
 
 nav.header .buttons{
@@ -66,15 +71,31 @@ nav.header .buttons{
     gap: .875rem;
     color: var(--gray);
 }
-.ghost-button{
+.button{
     border-radius: var(--radius);
+    padding: var(--lg-padding);
+    transition: 
+    background-color .2s;
+}
+
+  
+.ghost-button:hover{
+    background-color: rgb(174, 174, 174);
+}
+.primary-button:hover{
+    background-color: rgb(0, 0, 125);
+}
+nav.header .buttons a{
     padding: var(--md-padding);
+}
+.ghost-button{
     color: var(--gray);
     background-color: var(--whiteish-gray);
 }
+
+
+
 .primary-button{
     color: white;
-    border-radius: var(--radius);
-    padding: var(--md-padding);
     background-color: var(--primary);
 }
