@@ -12,6 +12,12 @@
     <link href="css/style.css" rel="stylesheet">
 
     <title>Alpha Dashboard</title>
+    <script>
+		/*setInterval(()=>{
+			location.reload();
+			console.log("reloaded");
+		},2000)*/
+    </script>
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,30 +25,84 @@
 
 </head>
 <body>
-    <nav class="header container">
+    <nav class="header">
+	  <div class="flex container">
         <div class="logo">
             <a href="#"><img src="assets/logos/logo.png"></a>
         </div>
         <div class="second-header">
             <ul class="nav-list">
-                <li><a href="#">For shop owners</a></li>
-                <li><a href="#">For clients</a></li>
-                <li><a href="#">About</a></li>
+                <li><a class="hover-underline" href="#">For shop owners</a></li>
+                <li><a class="hover-underline" href="#">For clients</a></li>
+                <li><a class="hover-underline" href="#">About</a></li>
             </ul>
         </div>
         <div class="buttons">
             <a href="#" class="button ghost-button">Log In</a>
             <a href="#" class="button primary-button">Sign Up</a>
         </div>
+      </div>
     </nav>
 
     <section class="main hero">
         <div class="hero-content">
-            <h1>Digital shop solution for easier conversions</h1>
-            <p>save time improve client outcomes</p>
-            <a href="#" class="button primary-button">Sign up for free</a>
+            <h1>Digital shop solution for<br> easier conversions</h1>
+            <p>Save time improve client outcomes</p>
+            <div>
+				<a href="#" class="button primary-button">Sign up for free</a>
+			</div>
         </div>
+        <video class = "narrow container rounded shadowed hero-video" src="./assets/video/ShowreelPreview.mp4" type="video/mp4"  controls >
+			 <figcaption>
+				<button id="play" aria-label="Play" role="button">►</button>
+				<progress id="progress" max="100" value="0">Progress</progress>
+			</figcaption>
+        </video>
+        
     </section>
+    
+    <section class="articles-section flex">
+		<div class="narrow container">
+			<h2>Why customers love us</h2>
+			<br>
+			<br>
+			<div class="articles">
+				<article>
+					<img src= "./assets/icons/shine.png" class="article-icon">
+					<h3>Clear dashboard</h3>
+					<p>A clear dashboard you can easily monitor all your progress live and watch your success grow.</p>
+				</article>
+				<article>
+					<img src= "./assets/icons/jig.png" class="article-icon">
+					<h3>Simple integration</h3>
+					<p>Alpha can be themed and dropped into any website or web-based app in a matter of minutes without any coding.</p>
+				</article>
+				<article>
+					<img src= "./assets/icons/link.png" class="article-icon">
+					<h3>A simple link to share</h3>
+					<p>Embed Alpha into your shop and collecting data becomes as simple as sharing a link</p>
+				</article>
+				<article>
+					<img src= "./assets/icons/plus.png" class="article-icon">
+					<h3>Effortless integration</h3>
+					<p>Alpha can be themed and dropped into any website or web-based app in a matter of minutes without writing any code.</p>
+				</article>
+				<article>
+					<img src= "./assets/icons/gear.png" class="article-icon">
+					<h3>Fully extensible</h3>
+					<p>The Alpha Extension kit provides a development environment to extend and customize the enitire experience.</p>
+				</article>
+				<article>
+					<img src= "./assets/icons/git.png" class="article-icon">
+					<h3>Backend data integration</h3>
+					<p>The Alpha platform brings data to where you need it. Whether its your spreadsheet, database or beyond.</p>
+				</article>
+			</div>
+		</div>
+		<img  class="side-image" src="./assets/phones.png">	
+    </section>
+    
     <p>Hello my people. I am super Sleepy</p>
+    
 </body>
 </html>
