@@ -12,11 +12,8 @@
     <link href="css/style.css" rel="stylesheet">
 
     <title>Alpha Dashboard</title>
-    <script>
-		setInterval(()=>{
-			location.reload();
-			console.log("reloaded");
-		},3500)
+    <script src="scripts/script.js">
+		
     </script>
 
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,20 +49,22 @@
 				<a href="#" class="button primary-button">Sign up for free</a>
 			</div>
         </div>
-        <div class = "video-player">
-			<video class = "narrow container rounded shadowed hero-video" src="./assets/video/ShowreelPreview.mp4" >
+        <div class = "video-player narrow  container rounded shadowed">
+			<video src="./assets/video/ShowreelPreview.mp4">
 			</video>
 			
 			<div class="controls">
 				<div class="play">
+					<div>
 					<svg class="circle primary-button play-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
 						<path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
 					</svg>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="circle ghost-button pause-ico hide">
 						  <path fill-rule="evenodd" d="M6.75 5.25a.75.75 0 01.75-.75H9a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H7.5a.75.75 0 01-.75-.75V5.25zm7.5 0A.75.75 0 0115 4.5h1.5a.75.75 0 01.75.75v13.5a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75V5.25z" clip-rule="evenodd" />
 					</svg>
+					</div>
 				</div>
-				<div class="timeline">
+				<div class="timeline hide">
 					<div class="bar">
 					<span class="inner"></span></div>
 				</div>
@@ -115,7 +114,172 @@
 		</div>
 		<img  class="side-image" src="./assets/phones.png">	
     </section>
-    
+	<br>
+	<br>
+	<br>
+	<section class="sign-up-section">
+		<div class="narrow container sign-up rounded hero">
+			<div class="hero-content">
+				<p>Sign up today</p>
+				<h1>Enter your e-mail address and get started for free</h1>
+				<br>
+
+				<div class="buttons">
+					<a class="button primary-button">
+						Sign up for free
+					</a>
+					<a href="" class="button ghost-button "> 
+						<p>Schedule a demo</p>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+						  </svg>
+						  
+						  
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<br>
+		<div class="narrow container reviews rounded hero">
+			<img class="quotes" src="/assets/icons/quotes.svg">
+			<div class="hero-content">
+				<article class="flex reviews ">
+					<div>
+					<div class="profile flex circle clip">
+						<img src="./assets/pastor banks.jpg">
+					</div></div>
+					<div class="review">
+						<div class="text"> Since I started using Alpha, I have a much better understanding of my church members. I have been able to double my anointing without spending more money.</div>
+						<p>
+							<strong>Blessed Uzochikwa</strong>
+							<span class="about">Head pastor at WaterBrook Church. Lekki, Lagos Nigera</span>
+							
+						</p>
+			
+						<div class="change-buttons">
+							<a class="lefty button  primary-button">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+								</svg></a>
+							  <a class="righty button primary-button">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+								</svg>		
+							  </a>
+						</div>
+
+					</div>
+					
+				</article>	
+			</div>				
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+	<section class="faq narrow">
+		<h1>FAQs</h1>
+		<br>
+		<div class="list flex">
+			<div class="item round container">
+				<div class="question flex">
+				<h3>Why should I use Alpha?</h3>
+					<a class="open button ghost-button circle ">
+						<svg class="plus" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+						</svg >
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="minus hide">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+						  </svg>
+						  
+					</a>
+				</div>
+				<p class="answer hide">lorem ipsum</p>
+			</div>
+
+			<div class="item round container">
+				<div class="question flex">
+				<h3>Is it free?</h3>
+					<a class="open button primary-button circle ">
+						<svg class="plus hide" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+						</svg >
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="minus">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+						  </svg>
+						  
+					</a>
+				</div>
+				<p class="answer">Yes, Alpha, the web security and management system, offers a free version with essential features. However, for advanced functionalities and enhanced security measures, Alpha offers premium paid plans tailored to meet specific needs.</p>
+			</div>
+
+			<div class="item round container">
+				<div class="question flex">
+				<h3>How will my customers benefit?</h3>
+					<a class="open button primary-button circle ">
+						<svg class="plus hide" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+						</svg >
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="minus">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+						  </svg>
+						  
+					</a>
+				</div>
+				<p class="answer hide">Lorem ipsum.</p>
+			</div>
+
+			<div class="item round container">
+				<div class="question flex">
+				<h3>What integration does Alpha provide?</h3>
+					<a class="open button primary-button circle ">
+						<svg class="plus hide" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+						</svg >
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="minus">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+						  </svg>
+						  
+					</a>
+				</div>
+				<p class="answer hide">Yes, Alpha, the web security and management system, offers a free version with essential features. However, for advanced functionalities and enhanced security measures, Alpha offers premium paid plans tailored to meet specific needs.</p>
+			</div>
+
+			<div class="item round container">
+				<div class="question flex">
+				<h3>How can I start?</h3>
+					<a class="open button primary-button circle ">
+						<svg class="plus hide" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+						</svg >
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.2" stroke="currentColor" class="minus">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+						  </svg>
+						  
+					</a>
+				</div>
+				<p class="answer hide">Lorem....... i.</p>
+			</div>
+		</div>
+	</section>
+	<br>
+	<section class="ending hero">
+		<div class="hero-content">
+			<h1>Get Started today</h1>
+			<p>Save time and improve outcomes</p>
+			<div>
+				<a class="button primary-button">
+					Sign up for free
+				</a>
+			</div>
+			<img src="./assets/original-a845ce04ab32b8162f5b1973ee0886e6.webp" class="narrow rounded ">
+
+			
+		</div>
+		
+	</section>
+	
     <p>Hello my people. I am super Sleepy</p>
     
 </body>

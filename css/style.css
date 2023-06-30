@@ -7,6 +7,8 @@
 
 :root{
     --primary: #232fe9;
+	--primary-gradient: rgb(31,50,242)  linear-gradient(90deg, rgba(31,50,242,1) 0%, rgba(79,46,242,1) 100%);
+	--primary-dark: rgb(17,4,77);
     --gray: #424242;
     --whiteish-gray: #f5f5f5;
     --alpha-font: Inter, sans serif;
@@ -55,7 +57,7 @@ a{
     margin: 0 auto;
 }
 .flex{
-	  display: flex;
+	display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -74,6 +76,9 @@ button{
 }
 .rounded{
 	border-radius: var(--radius2);
+}
+.round{
+	border-radius: var(--radius);
 }
 .shadowed{
 	box-shadow: var(--shadow);
@@ -120,7 +125,7 @@ nav.header .second-header ul li a{
 	border-radius:500rem;
 	transform: scale(0,0);
 	transition-duration: .25s;
-	transition-property: : transform, border-radius;
+	transition-property: transform, border-radius;
 }
 .hover-underline:hover:after{
 	transform: scaleX(1);
@@ -159,7 +164,7 @@ nav.header .buttons{
     background-color: rgb(174, 174, 174);
 }
 .primary-button:hover{
-    background-color: rgb(0, 0, 125);
+    background: var(--primary-dark);
 }
 nav.header .buttons a{
     padding: var(--md-padding);
@@ -171,7 +176,7 @@ nav.header .buttons a{
 
 .primary-button{
     color: white;
-    background-color: var(--primary);
+    background: var(--primary-gradient);
 }
 
 /******************HERO******************/
@@ -186,20 +191,15 @@ nav.header .buttons a{
 	align-items:center;
 }
 .hero-content{
+	overflow: hidden;
+	margin-top: 2rem;
 	padding:10rem 10rem;
 	text-align:center;
 	display:flex;
 	flex-direction:column;
-	gap: .5rem;
+	gap: .5rem; 
 }
-.hero-content h3{
-	
-}
-.hero-video{
-	display: block; 
-	overflow: hidden;
-	
-}
+
 
 /************ARTICLES**********/
 .articles{
@@ -227,7 +227,9 @@ nav.header .buttons a{
 	width: 45%;
 }
 .articles-section{
+	position: relative;
 	overflow:hidden;
+
 }
  
 .articles-section .side-image{
@@ -238,16 +240,21 @@ nav.header .buttons a{
 /*************************VIDEO PLAYER*****************/
 .video-player{
 	position:relative;
+	overflow: hidden;
+}
+.video-player video{
+	display:flex;
+	width: 100%;
 }
 .video-player .controls{
-	position: ;
+	position: 0;
 }
 .video-player .play svg.play-ico{
 	padding-left:.6rem;
 }
 .video-player .play svg{
 	padding: .5rem;
-	animation: ripple 1s linear;
+	
 }
 
 .video-player .play{
@@ -261,6 +268,10 @@ nav.header .buttons a{
 	transform: translate(50%,50%);
 }
 
+.ripple{
+	animation: ripple 1s forwards  1;
+}
+
 @keyframes ripple{
 	from{
 		opacity:1;
@@ -271,8 +282,165 @@ nav.header .buttons a{
 		transform: scale(2);
 	}
 }
+ 
+/* .video-player .controls .timeline{
+	outline:1px solid red;
+}
+ */
 
+ /***************** SIGN UP SECTION****************/
 
+ .sign-up-section .hero.sign-up{
+	background-image: url("../assets/logo with blue gradient bw.png");
+	background-size: auto auto;
+	background-position: center center;
+	background-color: var(--primary-dark);
+ }
+ .sign-up-section .hero .hero-content{
+	padding-block: 4rem;
+ }
+.sign-up{
+	color: white;
+ }
+ .sign-up-section .hero.sign-up .hero-content .button{
+  	width: 14rem;
+	font-weight: bold;
+	margin-inline: .4rem;
+}
 
+.sign-up-section .hero.sign-up .hero-content .buttons{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.sign-up-section .hero.sign-up .hero-content .buttons .ghost-button{
+	display: flex;
+	color: var(--primary);
+	padding-inline: 2rem;
+}
+ .sign-up-section .hero.sign-up .hero-content .buttons .ghost-button svg{
+	width: 1rem;
+ }
 
+/***************** REVIEWS SECTION****************/
+
+.hero.reviews{
+	position: relative;
+}
+
+.reviews .quotes{
+	position:absolute;
+	left: 8rem;
+	top: .5rem;
+	height: 50%;
+	color: var(--gray);
+ }
+
+.sign-up-section .hero.reviews{
+	background: rgb(227,227,241);
+	background: linear-gradient(170deg, rgba(227,227,241,1) 19%, rgba(251,247,254,1) 100%);
+	background-size: auto auto;
+	background-position: center center;
+	background-color: var(--primary-dark);
+ }
+.sign-up-section .hero.reviews{
+	color: var(--primary-dark);
+ }
+ .hero.reviews .hero-content{
+	padding-inline: 5rem;
+ }
+
+ .hero.reviews .profile{
+	overflow: hidden;
+
+	border: 5px solid white;
+	width: 10rem;
+	height: 10rem;
+	position: 0;
+ }
+
+ .hero.reviews .profile img{
+	width: 100%;
+	transform: translate(5%,10%) scale(2);
+ }
+
+ article.reviews{
+	position: relative;
+	gap: 2rem;
+ }
+ article.reviews .review {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	z-index: 1;
+	line-height: 2.4rem;
+	gap:1rem;
+ }
+
+ article.reviews .review .text {
+	font-size: 1.5rem;
+}
+
+ article.reviews .review .about{
+	color: #9B94B6;
+ }
+
+ article.reviews .review .change-buttons .button{
+	display: flex;
+	color: white;
+	width:2.2rem;
+	height: 2.2rem;
+	padding: 0;
+}
+article.reviews .review .change-buttons .button.lefty {
+	opacity: .3;
+}
+article.reviews .review .change-buttons .button svg{
+	margin: auto auto;
+	width:1.5rem;
+	height: 1.5rem;
+	
+}
+ article.reviews .review .change-buttons{
+	display: flex;
+	gap:.2rem
+ }
+
+ /****************FAQ***************/
+ .faq .list{
+	gap:1rem;
+	flex-direction: column;
+ }
+ .faq .list .item{
+	width: 100%;
+	padding: 1rem;
+	border: solid 1px rgb(0,0,0,.2);
+ }
+ .faq .list .answer{
+	color: var(--gray)
+}
+.faq .list .item .button{
+	display: flex;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	justify-content: center;
+	color: white;
+}
+.faq .list .item .button.ghost-button{
+	background-color: var(--gray);
+}
+.faq .list .item .button.ghost-button:hover{
+	background-color: var(--whiteish-gray);
+}
+.faq .list .item .button svg{
+	width: 1.1rem;
+}
+/************************ENDING HERO*****************/
+.ending.hero{
+	background-image: url("../assets/logo with blue gradient bw.png");
+	background-size: auto auto;
+	background-position: center top;
+	background-color: var(--primary-dark);
+}
 
