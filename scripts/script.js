@@ -24,6 +24,10 @@ onload=()=>{
             pauseIco.classList.add("hide")
         }
     }
+    let faqs=document.queryAllSelector(.faq .question a.open)
+    faqs.map((faq)=>{
+    
+    })
 
     
 }

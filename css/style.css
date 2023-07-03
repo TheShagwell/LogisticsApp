@@ -17,6 +17,7 @@
     --radius: .75rem ;
     --radius2: 1.5rem ;
     --shadow:0 1px 2px rgba(0,0,0,.2);
+    --light-border: 1px solid rgba(0,0,0,.2);
 }
 
 *{
@@ -55,6 +56,7 @@ a{
     width:95%;
     max-width:1375px;
     margin: 0 auto;
+	  overflow: hidden;
 }
 .flex{
 	display: flex;
@@ -87,24 +89,23 @@ button{
 	border-radius: 100%;
 }
 
-/** ************** GLOBAL STYLES ******************/
+/** ************** HEADER STYLES ******************/
 
-nav.header .logo a img{
+nav.header .logo img{
     max-width: 8.125rem;
    
 }
-nav.header .second-header ul{
+
+
+nav.header .nav-list{
+    list-style: none;
     display:flex;
     margin:0;
     gap:.875rem;
     align-items:center;
     
 }
-
-nav.header .second-header ul li{
-    list-style: none;
-}
-nav.header .second-header ul li a{
+nav.header .nav-list li a{
     color: var(--gray);
     border-bottom: none;
     padding: .5rem;
@@ -131,13 +132,25 @@ nav.header .second-header ul li a{
 	transform: scaleX(1);
 }
 
+
 nav.header .buttons{
     display: flex;
     gap: .875rem;
     color: var(--gray);
 }
-
-  
+.header.container{
+  overflow: hidden;
+  height:fit-content;
+  transition: height .1s;
+}
+.folded{
+  height:0px;
+}
+.header .ham.button{
+  display: none;
+  padding:.5rem;
+  border: var(--light-border);
+}
 /*
 .button:after{
 	content:'';
@@ -159,7 +172,7 @@ nav.header .buttons{
 }
 
 */
-
+/**********BUTTONS*********/
 .ghost-button:hover{
     background-color: rgb(174, 174, 174);
 }
@@ -237,7 +250,7 @@ nav.header .buttons a{
 	right:-8rem;
 	width: 40%;
 } 
-/*************************VIDEO PLAYER*****************/
+/**************VIDEO PLAYER*****************/
 .video-player{
 	position:relative;
 	overflow: hidden;
@@ -436,11 +449,48 @@ article.reviews .review .change-buttons .button svg{
 .faq .list .item .button svg{
 	width: 1.1rem;
 }
-/************************ENDING HERO*****************/
+/****************ENDING HERO*****************/
 .ending.hero{
+	color: white;
 	background-image: url("../assets/logo with blue gradient bw.png");
 	background-size: auto auto;
 	background-position: center top;
 	background-color: var(--primary-dark);
+	transform: translateY(-30%);
+}
+.hero-content{
+	padding-inline: 0;
 }
 
+
+.ending.hero img{
+	transform: scale(2) translateY(-10%);
+}
+/*****************,RESPONSIVENESS******************/
+@media only screen and (max-width: 600px){
+  .header .container,.header .nav-list
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .nav-list a{
+    width:100%;
+    
+  }
+.header .logo-header{
+  width:100%;
+}
+  .header .ham.button{
+    display: block;
+    padding-bottom: 1rem;
+  }
+  .nav-list{
+    display:none;
+  }
+  
+  reviews .quotes{
+    height:5rem;
+  }
+}
