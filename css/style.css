@@ -55,6 +55,7 @@ a{
     width:95%;
     max-width:1375px;
     margin: 0 auto;
+	overflow: hidden;
 }
 .flex{
 	display: flex;
@@ -438,9 +439,18 @@ article.reviews .review .change-buttons .button svg{
 }
 /************************ENDING HERO*****************/
 .ending.hero{
+	color: white;
 	background-image: url("../assets/logo with blue gradient bw.png");
 	background-size: auto auto;
 	background-position: center top;
 	background-color: var(--primary-dark);
+	transform: translateY(-30%);
+}
+.hero-content{
+	padding-inline: 0;
 }
 
+
+.ending.hero img{
+	transform: scale(2) translateY(-10%);
+}
