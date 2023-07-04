@@ -18,6 +18,8 @@
     --radius2: 1.5rem ;
     --shadow:0 1px 2px rgba(0,0,0,.2);
     --light-border: 1px solid rgba(0,0,0,.2);
+
+
 }
 
 *{
@@ -456,7 +458,7 @@ article.reviews .review .change-buttons .button svg{
 	background-size: auto auto;
 	background-position: center top;
 	background-color: var(--primary-dark);
-	transform: translateY(-30%);
+	
 }
 .hero-content{
 	padding-inline: 0;
@@ -494,6 +496,7 @@ article.reviews .review .change-buttons .button svg{
     height:5rem;
   }
 }
-.ending.hero img{
-	transform: scale(2) translateY(-10%);
-}
+
+
+/************DASHOBARDPAGE************/
+

@@ -1,0 +1,128 @@
+:root{
+	--dark-solid-color-extra-body-background: #25293C;
+	--dark-typography-color-heading-text: hsla(0, 0%, 100%, 0.6);
+    --dark-typography-color-body-text: hsla(0, 0%, 100%, 0.4);
+
+    --dark-solid-color-extra-card-background: #2F3349 ;
+    --card-box-shadow: 0px 2px 4px 0px rgba(15, 20, 34, 0.40);
+    
+    --light-opacity-color-primary-primary-16: rgba(115, 103, 240, 0.16);
+    --light-solid-color-primary-primary-500-base: #7367F0;
+}
+@font-face {
+    font-family: Public Sans;
+    src: url(../assets/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+    color: var(--dark-typography-color-body-text, #8692D0);
+    font-family: Public Sans;
+    font-style: normal;
+}
+/* *******TEXTS******** */
+.h4,.heading,.semi-bold{
+    color: var(--dark-typography-color-heading-text, #8692D0);
+}
+.heading{
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+.semi-bold{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+}
+.h4{
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+p{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+}
+p.semi-bold{
+    text-align: center;
+    font-size: 0.8125rem
+    font-weight: 600;
+    line-height: 0.875rem;
+}
+
+/* GLOBALS */
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+}
+.jc-center{
+    justify-content: center;
+}
+.flex-1{
+    flex: 1;
+}
+.jc-space-between{
+    justify-content: space-between;
+}
+.col{
+    flex-direction: column;
+}
+.card{
+    background: var(--dark-solid-color-extra-card-background);
+    box-shadow: var(--card-box-shadow);
+}
+.badge{
+    border-radius: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    
+}
+.badge.blue{
+    background-color: var(--light-opacity-color-primary-primary-16);
+}
+.blue{
+    color: var(--light-solid-color-primary-primary-500-base);
+}
+
+
+/* GLOBALS */
+
+
+.dashboard{
+    background-color: var(--dark-solid-color-extra-body-background);
+    max-width: 90rem;
+}
+
+.dashboard .menu{  
+    max-width: 16.25rem;
+    height: 100vh;
+   
+}
+.dashboard .menu .logo-header{
+    display: flex;
+    gap: 0.625rem;
+    padding: 1.25rem 0.875rem 1.25rem 1.125rem;
+}
+.menu .list{
+    padding: 0rem 0.875rem;
+    gap: 0.25rem;
+
+}
+.menu .item{
+    display: flex;
+    padding: 0.5625rem 1rem;
+    align-items: center;
+    gap: 0.5rem;  
+}
+
+ .menu .list .badge{
+    width: 1.375rem;
+    height: 1.375rem;
+}
