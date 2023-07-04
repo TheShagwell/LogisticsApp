@@ -7,17 +7,16 @@
     <link href="./css/style2.css" rel="stylesheet">
 
 </head>
-<body class="dashboard">
-    <div class="">
-        <div class="menu card">
+<body class="">
+    <div class="dashboard flex">
+        <div class="menu card gray-shadow">
             <div class="logo-header">
                 <img class="logo-img" src="./assets/logos/vuexy-logo.svg">
                 <h1 class = "heading flex-1">Vuexy</h1>
                 <img src="./assets/logos/circle-dot.svg">
             </div>
             <div class="list flex col jc-center">
-                <a hre></a>
-                <a  href="#" class="dashboard-dropdown flex item">
+                <a  href="#" class="flex item">
                     <svg width="22" stroke="currentColor" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="smart-home">
                         <g id="Path">
@@ -32,7 +31,8 @@
                     </svg> 
                     <h2 class="semi-bold flex-1">Dashboard</h2>
                     <span class="badge blue">
-                        <p class="semi-bold">3</p></span>
+                        <p class="semi-bold">3</p>
+                    </span>
                     <svg width="18" stroke="currentColor" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="chevron-down">
                         <g id="Path">
@@ -42,41 +42,210 @@
                         </g>
                     </svg> 
                 </a>
-                
-                <a href="#" class="item">
-                    <svg class="blue"  width="20" height="21" viewBox="0 0 20 21" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <g id="point">
-                        <circle id="Oval" cx="10" cy="10.1107" r="3.33333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                    </svg>
-                    <p class="flex-1">Analytics</p> 
-                </a>
-                <a href="#" class="item">
-                    <svg class="blue"  width="20" height="21" viewBox="0 0 20 21" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <g id="point">
-                        <circle id="Oval" cx="10" cy="10.1107" r="3.33333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                    </svg>
-                    <p class="flex-1">CRM</p> 
-                </a>
-                <a href="#" class="item">
-                    <svg class="blue" width="20" height="21" viewBox="0 0 20 21" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <g id="point">
-                        <circle id="Oval" cx="10" cy="10.1107" r="3.33333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                    </svg>
-                    <p class="flex-1">eCommerce</p> 
-                </a>
-                <a href="#" class="item">
-                    <img src="./assets/icons/layout-sidebar.svg">
-                    <p class="flex-1">Layouts</p> 
-                </a>
-            </div>
-        </div>
-        <div class="container">
-            <nav>
 
+                <div class="dashboard-dropdown  flex col jc-center">
+                    <a href="#" class="item">
+                        <svg class="blue"  width="20" height="21" viewBox="0 0 20 21" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g id="point">
+                            <circle id="Oval" cx="10" cy="10.1107" r="3.33333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                        <p class="flex-1">Analytics</p> 
+                    </a>
+                    <a href="#" class="item">
+                        <svg class="blue"  width="20" height="21" viewBox="0 0 20 21" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g id="point">
+                            <circle id="Oval" cx="10" cy="10.1107" r="3.33333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                        <p class="flex-1">CRM</p> 
+                    </a>
+                    <a href="#" class="item">
+                        <svg class="blue" width="20" height="21" viewBox="0 0 20 21" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <g id="point">
+                            <circle id="Oval" cx="10" cy="10.1107" r="3.33333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                        <p class="flex-1">eCommerce</p> 
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/layout-sidebar.svg">
+                        <p class="flex-1">Layouts</p> 
+                    </a>
+                </div>
+
+            </div>
+            <section class="apps-pages-section">
+                <div class="header caption">APPS & PAGES</div>
+                <div class="list flex col jc-center">
+                    <a href="#" class="item">
+                        <img src="./assets/icons/calendar.svg">
+                        <p class="flex-1">calendar</p> 
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/file-dollar.svg">
+                        <p class="flex-1">Invoice</p> 
+                        <span class="badge red">2</span>
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/users.svg">
+                        <p class="flex-1">Users</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/settings.svg">
+                        <p class="flex-1">Roles & Permissions</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/file.svg">
+                        <p class="flex-1">Pages</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/lock.svg">
+                        <p class="flex-1">Authentications</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/forms.svg">
+                        <p class="flex-1">Wizard Examples</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/square.svg">
+                        <p class="flex-1">Modal Examples</p> 
+                       
+                    </a> 
+                </div>
+            </section>
+            <section class="components-section">
+                <div class="header caption">COMPONENTS</div>
+                <div class="list flex col jc-center">
+                    <a href="#" class="item">
+                        <img src="./assets/icons/id.svg">
+                        <p class="flex-1">Card</p> 
+                        <span class="badge blue">4</span>
+            
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                  
+                    <a href="#" class="item">
+                        <img src="./assets/icons/color-swatch.svg">
+                        <p class="flex-1">User Interface</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    
+                    <a href="#" class="item">
+                        <img src="./assets/icons/components.svg">
+                        <p class="flex-1">Extended UI</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+
+                    <a href="#" class="item">
+                        <img src="./assets/icons/brand-tabler.svg">
+                        <p class="flex-1">Icons</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                </div>
+            </section>
+
+            <section class="forms-tables-section">
+                <div class="header caption">FORMS & TABLES</div>
+                <div class="list flex col jc-center">
+                    <a href="#" class="item">
+                        <img src="./assets/icons/toggle-left.svg">
+                        <p class="flex-1">Form Elements</p> 
+            
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                  
+                    <a href="#" class="item">
+                        <img src="./assets/icons/layout-navbar.svg">
+                        <p class="flex-1">Form Layouts</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    
+                    <a href="#" class="item">
+                        <img src="./assets/icons/text-wrap-disabled.svg">
+                        <p class="flex-1">Form Wizard</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+
+                    <a href="#" class="item">
+                        <img src="./assets/icons/table.svg">
+                        <p class="flex-1">Tables</p> 
+                    </a>
+
+                    <a href="#" class="item">
+                        <img src="./assets/icons/layout-grid.svg">
+                        <p class="flex-1">Datatables</p> 
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+
+                </div>
+            </section>
+
+            <section class="charts-maps">
+                <div class="header caption">CHARTS & MAPS</div>
+                <div class="list flex col jc-center">
+                    <a href="#" class="item">
+                        <img src="./assets/icons/chart-bar.svg">
+                        <p class="flex-1">Charts</p> 
+            
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/command.svg">
+                        <p class="flex-1">Access Control</p> 
+                    </a>
+                    <a href="#" class="item">
+                        <img src="./assets/icons/fi_more-horizontal.svg">
+                        <p class="flex-1">Other</p> 
+            
+                        <img src="./assets/icons/chevron-right.svg">
+                    </a>
+                </div>
+            </section>
+        </div>
+        <div class="container flex-1">
+            <nav class="card gray-shadow flex">
+                <div class="flex flex-1 search">
+                    <img src="./assets/icons/search.svg">
+                    <input class="flex-1 muted transparent" placeholder="Search(Ctrl+/)">
+                </div>
+                <div class="flex jc-center items-center actions">
+                    <a class=".icons flex rel">
+                        <div class="flex clip circle">
+                            <img src="./assets/icons/nigeria.svg">
+                        </div>
+                    </a>
+
+                    <a class=".icon flex">
+                        <img src="./assets/icons/moon-stars.svg">
+                    </a>
+                    <a class=".icon flex">
+                        <img src="./assets/icons/layout-grid-add.svg">
+                    </a>
+
+                    <a class=".icon flex rel">
+                        <span class="badge abs semi-bold flex jc-center items-center"><p class="semi-bold">4</p></span>
+                        <img src="./assets/icons/bell.svg">
+                    </a>
+
+                    <a class="flex avatar rel">
+                        <img class ="abs online bordered circle" src="./assets/icons/Status.svg" >
+                        <div class="flex clip circle">
+                            <img src="./assets/icons/Mr Ezra.jpg">
+                        </div>
+                        
+                    </a>
+
+                </div>
             </nav>
+
+            <h1></h1>
         </div>
     </div>
 </body>

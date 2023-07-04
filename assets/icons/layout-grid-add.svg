@@ -1,0 +1,20 @@
+<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="layout-grid-add">
+<g id="Rectangle">
+<rect x="4.77411" y="4.44531" width="6.5" height="6.5" rx="1" stroke="#8692D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4.77411" y="4.44531" width="6.5" height="6.5" rx="1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Rectangle_2">
+<rect x="15.6075" y="4.44531" width="6.5" height="6.5" rx="1" stroke="#8692D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="15.6075" y="4.44531" width="6.5" height="6.5" rx="1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Rectangle_3">
+<rect x="4.77411" y="15.2773" width="6.5" height="6.5" rx="1" stroke="#8692D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="4.77411" y="15.2773" width="6.5" height="6.5" rx="1" stroke="white" stroke-opacity="0.4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="Shape">
+<path d="M15.6075 17.5273C15.0552 17.5273 14.6075 17.9751 14.6075 18.5273C14.6075 19.0796 15.0552 19.5273 15.6075 19.5273V17.5273ZM22.1075 19.5273C22.6598 19.5273 23.1075 19.0796 23.1075 18.5273C23.1075 17.9751 22.6598 17.5273 22.1075 17.5273V19.5273ZM19.8575 15.2773C19.8575 14.7251 19.4098 14.2773 18.8575 14.2773C18.3052 14.2773 17.8575 14.7251 17.8575 15.2773H19.8575ZM17.8575 21.7773C17.8575 22.3296 18.3052 22.7773 18.8575 22.7773C19.4098 22.7773 19.8575 22.3296 19.8575 21.7773H17.8575ZM15.6075 19.5273H22.1075V17.5273H15.6075V19.5273ZM17.8575 15.2773V21.7773H19.8575V15.2773H17.8575Z" fill="#8692D0"/>
+<path d="M15.6075 17.5273C15.0552 17.5273 14.6075 17.9751 14.6075 18.5273C14.6075 19.0796 15.0552 19.5273 15.6075 19.5273V17.5273ZM22.1075 19.5273C22.6598 19.5273 23.1075 19.0796 23.1075 18.5273C23.1075 17.9751 22.6598 17.5273 22.1075 17.5273V19.5273ZM19.8575 15.2773C19.8575 14.7251 19.4098 14.2773 18.8575 14.2773C18.3052 14.2773 17.8575 14.7251 17.8575 15.2773H19.8575ZM17.8575 21.7773C17.8575 22.3296 18.3052 22.7773 18.8575 22.7773C19.4098 22.7773 19.8575 22.3296 19.8575 21.7773H17.8575ZM15.6075 19.5273H22.1075V17.5273H15.6075V19.5273ZM17.8575 15.2773V21.7773H19.8575V15.2773H17.8575Z" fill="white" fill-opacity="0.4"/>
+</g>
+</g>
+</svg>
