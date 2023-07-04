@@ -24,10 +24,22 @@ onload=()=>{
             pauseIco.classList.add("hide")
         }
     }
-    let faqs=document.queryAllSelector(.faq .question a.open)
-    faqs.map((faq)=>{
-    
-    })
+    let faqs=document.querySelector(".faq .list")
+   
+   
+    for (let i in faqs.children){
+      let faq=faqs.children[i];
+      print(faq)
+      faq.querySelector("a").onClick=()=>{
+        var open = faq.querySelector("p").classList.has("hide")
+        console.log(open)
+        
+      }
+    }
 
     
+}
+
+function print(variable){
+  console.log(variable)
 }
