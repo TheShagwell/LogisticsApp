@@ -36,6 +36,7 @@
     font-family: Public Sans;
     font-style: normal;
 }
+
 /* *******TEXTS******** */
 h6,h4,.heading,.semi-bold{
     color: var(--dark-typography-color-heading-text, #8692D0);
@@ -88,6 +89,11 @@ p.semi-bold,.badge{
 }
 
 /* GLOBALS */
+.scroll{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
 a{
     text-decoration: none;
 }
@@ -185,8 +191,9 @@ a{
 }
 
 .dashboard .menu{  
-    max-width: 16.25rem;
+    width: 16.25rem;
     height: 100%;
+    
     scroll-behavior: smooth;
     
 }

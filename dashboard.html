@@ -9,7 +9,7 @@
 </head>
 <body class="">
     <div class="dashboard flex">
-        <div class="menu card gray-shadow">
+        <div class="menu scroll card gray-shadow">
             <div class="logo-header">
                 <img class="logo-img" src="./assets/logos/vuexy-logo.svg">
                 <h1 class = "heading flex-1">Vuexy</h1>
@@ -209,7 +209,7 @@
                 </div>
             </section>
         </div>
-        <main class="container flex col flex-1">
+        <main class="container scrol flex col flex-1">
             <nav class="card gray-shadow flex">
                 <div class="flex flex-1 search">
                     <img src="./assets/icons/search.svg">
@@ -441,6 +441,16 @@
                     </tr>
                 </table>
             </section>
+
+            <section class="chart-js">
+                
+               <div class="card">
+                <h1>Statistics</h1>
+                <chart id="statistics" type="line"></chart>
+               </div>
+                  
+            </section>
+
             <footer class="flex">
                 <p class="flex-1">© 2022, made with ❤️ by Pixinvent</p>
                 <div class="flex links">
@@ -453,5 +463,7 @@
         </main>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+<script type="module" src="./scripts/script2.js"></script>
 </html>
