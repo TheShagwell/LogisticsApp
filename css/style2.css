@@ -320,3 +320,7 @@ section .header{
 .container footer .links{
     gap:1rem;
 }
+
+.chart-js .card{
+    padding: 2rem;
+}
